@@ -1,0 +1,27 @@
+#include "BlnkPeakSegAvg.h"
+
+BlnkPeakSegAvg::BlnkPeakSegAvg(const string& pbf, const string& rf, const string& ef,
+			       string et, bool pe, int bsm, double tl, string ot)
+  : _pntrBlnkFile(pbf),
+    _rawFile(rf),
+    _eegFile(ef),
+    _eegTest(et),
+    _plotErr(pe),
+    _blinkSetNum(bsm),
+    _tol(tl),
+    _outputType(ot)
+{
+  
+}
+
+void BlnkPeakSegAvg::readRaw(string fileName)
+{
+  ofstream rawFile;
+  rawfile.open(fileName, ios::in);
+  
+}
+void logAction(const string &text)
+{
+  
+}
+
